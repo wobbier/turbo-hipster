@@ -36,7 +36,7 @@ public:
 
 	V2T Dot(Vector2<V2T> v)
 	{
-		return (V2T)x * v.x + y * v.y + z * v.z;
+		return (V2T)x * v.x + y * v.y;
 	}
 };
 #endif
