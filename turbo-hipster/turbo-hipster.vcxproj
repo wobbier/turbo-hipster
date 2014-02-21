@@ -41,8 +41,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>..\glut\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>..\glut\Lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -55,11 +55,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\glut\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\glut\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -86,9 +88,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Collisionlib\Collisionlib.vcxproj">
       <Project>{729d4947-3901-4cdf-93de-ac36c0b43dfa}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\Mathlib\Mathlib.vcxproj">
-      <Project>{fb706f88-503e-4340-9fcd-d976843ab7c8}</Project>
     </ProjectReference>
     <ProjectReference Include="..\Physicslib\Physicslib.vcxproj">
       <Project>{f0b03d55-8c75-4a7d-b4c6-09bf575efe23}</Project>

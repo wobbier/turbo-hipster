@@ -5,11 +5,11 @@ VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "turbo-hipster", "turbo-hipster\turbo-hipster.vcxproj", "{C7EA50EC-011B-4847-B55D-12983344B3B5}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Mathlib", "Mathlib\Mathlib.vcxproj", "{FB706F88-503E-4340-9FCD-D976843AB7C8}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Physicslib", "Physicslib\Physicslib.vcxproj", "{F0B03D55-8C75-4A7D-B4C6-09BF575EFE23}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Collisionlib", "Collisionlib\Collisionlib.vcxproj", "{729D4947-3901-4CDF-93DE-AC36C0B43DFA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Mathlib", "Mathlib\Mathlib.vcxproj", "{DE7C208E-F42E-4375-8AC5-AA916C9BD2E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,6 @@ Global
 		{C7EA50EC-011B-4847-B55D-12983344B3B5}.Debug|Win32.Build.0 = Debug|Win32
 		{C7EA50EC-011B-4847-B55D-12983344B3B5}.Release|Win32.ActiveCfg = Release|Win32
 		{C7EA50EC-011B-4847-B55D-12983344B3B5}.Release|Win32.Build.0 = Release|Win32
-		{FB706F88-503E-4340-9FCD-D976843AB7C8}.Debug|Win32.ActiveCfg = Debug|Win32
-		{FB706F88-503E-4340-9FCD-D976843AB7C8}.Debug|Win32.Build.0 = Debug|Win32
-		{FB706F88-503E-4340-9FCD-D976843AB7C8}.Release|Win32.ActiveCfg = Release|Win32
-		{FB706F88-503E-4340-9FCD-D976843AB7C8}.Release|Win32.Build.0 = Release|Win32
 		{F0B03D55-8C75-4A7D-B4C6-09BF575EFE23}.Debug|Win32.ActiveCfg = Debug|Win32
 		{F0B03D55-8C75-4A7D-B4C6-09BF575EFE23}.Debug|Win32.Build.0 = Debug|Win32
 		{F0B03D55-8C75-4A7D-B4C6-09BF575EFE23}.Release|Win32.ActiveCfg = Release|Win32
@@ -33,6 +29,10 @@ Global
 		{729D4947-3901-4CDF-93DE-AC36C0B43DFA}.Debug|Win32.Build.0 = Debug|Win32
 		{729D4947-3901-4CDF-93DE-AC36C0B43DFA}.Release|Win32.ActiveCfg = Release|Win32
 		{729D4947-3901-4CDF-93DE-AC36C0B43DFA}.Release|Win32.Build.0 = Release|Win32
+		{DE7C208E-F42E-4375-8AC5-AA916C9BD2E3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE7C208E-F42E-4375-8AC5-AA916C9BD2E3}.Debug|Win32.Build.0 = Debug|Win32
+		{DE7C208E-F42E-4375-8AC5-AA916C9BD2E3}.Release|Win32.ActiveCfg = Release|Win32
+		{DE7C208E-F42E-4375-8AC5-AA916C9BD2E3}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{FB706F88-503E-4340-9FCD-D976843AB7C8}</ProjectGuid>
+    <ProjectGuid>{DE7C208E-F42E-4375-8AC5-AA916C9BD2E3}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Mathlib</RootNamespace>
   </PropertyGroup>
@@ -72,6 +72,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="Vector3.h" />
+    <ClInclude Include="Vector4.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
