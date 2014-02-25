@@ -10,7 +10,7 @@ public:
 	V2T x;
 	V2T y;
 
-	Vector2() : x(nullptr), y(nullptr) {}
+	Vector2() : x(0), y(0) {}
 
 	Vector2(V2T X, V2T Y) : x(X), y(Y) {}
 

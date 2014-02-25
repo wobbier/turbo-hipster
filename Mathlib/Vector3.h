@@ -11,7 +11,7 @@ public:
 	V3T y;
 	V3T z;
 
-	Vector3() : x(nullptr), y(nullptr), z(nullptr) {}
+	Vector3() : x(0), y(0), z(0) {}
 
 	Vector3(V3T X, V3T Y, V3T Z) : x(X), y(Y), z(Z) {}
 

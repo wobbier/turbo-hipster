@@ -12,7 +12,7 @@ public:
 	V4T z;
 	V4T w;
 
-	Vector4() : x(nullptr), y(nullptr), z(nullptr), w(nullptr) {}
+	Vector4() : x(0), y(0), z(0), w(0) {}
 
 	Vector4(V4T X, V4T Y, V4T Z, V4T W) : x(X), y(Y), z(Z), w(W) {}
 
