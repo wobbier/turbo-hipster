@@ -84,6 +84,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Model.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Collisionlib\Collisionlib.vcxproj">
@@ -92,6 +93,9 @@
     <ProjectReference Include="..\Physicslib\Physicslib.vcxproj">
       <Project>{f0b03d55-8c75-4a7d-b4c6-09bf575efe23}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Model.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
