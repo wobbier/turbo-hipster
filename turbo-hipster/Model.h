@@ -5,7 +5,7 @@
  * Loads a .obj file into faces and vertices and then renders the model.
  */
 #pragma once
-
+#include "Vector3.h"
 class Model {
 public:
 	Model(std::string);
@@ -20,4 +20,3 @@ private:
 	void addFace(int);
 	bool fileLoaded = false;
 };
-

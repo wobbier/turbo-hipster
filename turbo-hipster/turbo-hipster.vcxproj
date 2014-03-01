@@ -55,13 +55,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>..\glut\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Mathlib;..\glut\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\glut\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glut32.lib;Physicslib.lib;Collisionlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Debug;..\glut\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -89,6 +89,9 @@
   <ItemGroup>
     <ProjectReference Include="..\Collisionlib\Collisionlib.vcxproj">
       <Project>{729d4947-3901-4cdf-93de-ac36c0b43dfa}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Mathlib\Mathlib.vcxproj">
+      <Project>{de7c208e-f42e-4375-8ac5-aa916c9bd2e3}</Project>
     </ProjectReference>
     <ProjectReference Include="..\Physicslib\Physicslib.vcxproj">
       <Project>{f0b03d55-8c75-4a7d-b4c6-09bf575efe23}</Project>

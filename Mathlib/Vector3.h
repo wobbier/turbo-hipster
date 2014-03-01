@@ -30,9 +30,20 @@ public:
 		return Vector3(x * v.x, y * v.y, z * v.z);
 	}
 
-	V3T Normalize()
+	Vector3 operator/(float v)
+	{
+		return Vector3(x / v, y / v, z / v);
+	}
+
+	V3T Magnitude()
 	{
 		return (V3T)std::sqrt(x*x + y*y + z*z);
+	}
+
+	Vector3 Normalize()
+	{
+		Vector3 tempVector = *this;
+		return tempVector / tempVector.Magnitude();
 	}
 
 	V3T Dot(Vector3<V3T> v)

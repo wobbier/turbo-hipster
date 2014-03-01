@@ -31,7 +31,7 @@ public:
 		return Vector4(x * v.x, y * v.y, z * v.z, w * v.w);
 	}
 
-	V4T Normalize()
+	V4T Magnitude()
 	{
 		return (V4T)std::sqrt(x*x + y*y + z*z + w*w);
 	}

@@ -4,9 +4,11 @@
 * November 11, 2013
 * Loads a .obj file into faces and vertices and then renders the model.
 */
-#include "Vaereal.h"
 #include "Model.h"
-#include "GL\glut.h"
+#include <string>
+#include <iostream>
+#include <fstream>
+#include "glut.h"
 
 Model::Model(std::string filename)
 {

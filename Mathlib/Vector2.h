@@ -29,7 +29,7 @@ public:
 		return Vector2(x * v.x, y * v.y);
 	}
 
-	V2T Normalize()
+	V2T Magnitude()
 	{
 		return (V2T)std::sqrt(x*x + y*y);
 	}
