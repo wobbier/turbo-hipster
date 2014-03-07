@@ -1,0 +1,39 @@
+Math Library C++
+
+- Matrices
+- Vector --- new Vector<float>(3);
+			{
+				T* variables = new T[10];
+				
+				
+			}
+- Vector2, vector3, vector4
+
+Physics Library
+
+- Physics
+Variables:
+	: Mass
+	: Rotational Inertia
+	: Velocity
+	: InitialVelocity
+	: Acceleration
+	: Position
+	: Angular Acceleration
+	: Angular Velocity
+	: Angle
+	: Force
+	: Torque
+Functions:
+	: Solve() -- Solves for accelerations from torque and force
+	: PhysicsUpdate(deltaTime) -- solves for accelerations and velocities
+	
+Colib Pro (collision Library)
+	Consisting Of:
+		:broadPhase -- Quad trees
+		:middlePhase -- Box colliders, spherical Colliders, anything that is rough and not perfect for the shape
+		:PrecisePhase -- Polygon Collisions
+		
+		- CollisionEnvironment:
+			: has reference to all objects with colliders
+			: Upon creating 
